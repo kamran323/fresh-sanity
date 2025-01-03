@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/geist-mono-regular.woff2') format('woff2'),
+       url('/fonts/geist-mono-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Font ko global style mein apply karein */
+body {
+  font-family: 'Geist Mono', sans-serif;
+}
