@@ -1,5 +1,5 @@
 import React from 'react';
-import female from "@/app/assets/Female.png"
+import female from "@/app/assets/Female.png";
 import Wrapper from './Wrapper';
 import Image from 'next/image';
 
@@ -13,10 +13,8 @@ const outComePoint = [
 const Outcome = () => {
     return (
         <section className='mt-16 md:mt-28'>
-
             <Wrapper>
                 <div className='flex gap-x-8 items-center flex-col-reverse md:flex-row'>
-
                     {/* left image */}
                     <div className='flex-1'>
                         <Image src={female} alt="female employ" />
@@ -24,7 +22,9 @@ const Outcome = () => {
                     {/* right content */}
                     <div className='flex-1'>
                         <h2 className='font-bold text-4xl'>The Outcome for Participants of the Program</h2>
-                        <p className='mt-4 text-slate-600 text-lg'>As a graduate of this program, you will own valuable products such as Full-Stack App Templates, AR and VR Experiences, and APIs that are marketed globally by the Panaverse DAO. You will also have the opportunity to offer your services at a rate of $50 per hour, providing a path to financial stability while contributing to the growth of Pakistan's software exports.</p>
+                        <p className='mt-4 text-slate-600 text-lg'>
+                            As a graduate of this program, you will own valuable products such as Full-Stack App Templates, AR and VR Experiences, and APIs that are marketed globally by the Panaverse DAO. You will also have the opportunity to offer your services at a rate of $50 per hour, providing a path to financial stability while contributing to the growth of Pakistan&apos;s software exports.
+                        </p>
                         <div className='mt-6 grid grid-flow-col-2 gap-x-2 gap-y-4'>
                             {outComePoint.map((item, index) => (
                                 <div key={index} className='flex items-center gap-x-2'>
@@ -38,21 +38,15 @@ const Outcome = () => {
                                             </radialGradient>
                                         </defs>
                                     </svg>
-
-
-
                                     <h3 className='font-medium text-lg'>{item}</h3>
                                 </div>
                             ))}
                         </div>
                     </div>
-
                 </div>
-
             </Wrapper>
-
         </section>
-    )
-}
+    );
+};
 
-export default Outcome
+export default Outcome;
